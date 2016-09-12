@@ -1,0 +1,747 @@
+/*
+	Theme Name:   Nashville Luxury Council
+	Description:  A Storefront child theme exclusively for the Nashville Luxury Council.
+	Author:       Jonathan Gatlin
+	Author URI:   http://gatl.in
+	Template:     storefront
+	Version:      1.0.0
+	License:      GNU General Public License v2 or later
+	License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+	Tags:         light, two-columns, right-sidebar, responsive-layout, accessibility-ready
+*/
+
+/* Header */
+
+.site-header {
+	padding-top: 0px !important;
+}
+
+@media screen and (max-width: 768px) {
+
+	.site-header {
+		text-align: center;
+		padding-top: 1em !important;
+	}
+
+}
+
+
+.storefront-primary-navigation {
+	background: transparent !important;
+}
+
+/* Logo */
+
+.site-header .custom-logo-link img {
+	margin: 0 auto !important;
+}
+
+.custom-logo-link {
+	margin: 1em auto !important;
+	float: none !important;
+}
+
+@media screen and (max-width: 768px) {
+
+	.custom-logo-link {
+		margin-bottom: 1em !important;
+	}
+
+}
+
+@media screen and (min-width: 768px) {
+
+	a.custom-logo-link {
+		width: 54.3594px !important;
+		padding-top: 0px !important;
+	}
+
+}
+
+/* Navigation */
+
+.main-navigation .menu-toggle {
+	margin: 0 auto 1em auto;
+}
+
+.main-navigation ul li a:before {
+	display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+	.main-navigation {
+		width: 100%;
+		margin-bottom: 0px !important;
+		padding: 0px !important;
+		font-size: .9em;
+		letter-spacing: 1px !important;
+		text-align: center !important;
+		border-bottom: 3px solid #000;
+	}
+
+	.main-navigation ul.menu > li > a,
+	.main-navigation ul.nav-menu > li > a {
+		padding: 1em !important;
+	}
+
+	.main-navigation ul.menu > li.current-menu-item > a,
+	.main-navigation ul.nav-menu > li.current-menu-item > a {
+
+	}
+
+	.main-navigation ul.menu > li > a:hover,
+	.main-navigation ul.nav-menu > li > a:hover  {
+		background-color: #000;
+		color: #fff;
+		-webkit-transition: all 0.5s; /* Safari 3.1 to 6.0 */
+		transition: all 0.5s;
+	}
+
+	.secondary-navigation {
+		margin: 0 !important;
+		width: auto !important;
+		float: right !important;
+	}
+
+	.secondary-navigation ul.menu a:hover {
+		background-color: #000;
+		color: #fff;
+		-webkit-transition: all 0.5s; /* Safari 3.1 to 6.0 */
+		transition: all 0.5s;
+	}
+
+	.secondary-navigation .menu > li > a:before {
+		width: 0px !important;
+	}
+
+	.woocommerce-active .site-header .site-header-cart {
+		padding-top: 0px !important;
+	}
+
+}
+
+@media screen and (min-width: 767px) and (max-width: 855px) {
+
+	.main-navigation {
+		font-size: 0.650em !important;
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+
+	.main-navigation ul li a {
+		border-bottom: 1px solid #eee;
+		width: 75%;
+		margin: 0 auto;
+	}
+
+	.main-navigation .menu-toggle {
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.handheld-navigation {
+		border: 1px solid #000
+	}
+
+	.main-navigation ul li a:hover {
+		background-color: #eee;
+	}
+
+	button.menu-toggle,
+	button.menu-toggle:hover {
+    	border: none !important;
+}
+
+}
+
+/* Mega Menu */
+
+.main-navigation ul li.smm-active ul.sub-menu {
+	margin-top: -1px !important;
+}
+
+.smm-mega-menu {
+	margin: 0px !important;
+	padding: 0px !important;
+	border: 3px solid #000;
+}
+
+/*ul#menu-lifestyle-menu li a {
+	font-family: 'Montserrat', sans-serif !important;
+	font-weight: normal !important;
+	letter-spacing: 1px !important;
+	text-transform: uppercase !important;
+}
+
+ul#menu-lifestyle-menu li a {
+	color: #000 !important;
+}
+ul#menu-lifestyle-menu li:hover,
+ul#menu-lifestyle-menu li a:hover {
+	background-color: #000;
+	color: #fff !important;
+}*/
+
+/* Content */
+
+#content {
+	margin-top: 2em;
+}
+
+.hentry,
+.hentry .entry-header,
+.hentry .entry-header h1 {
+    border-bottom: none !important;
+
+}
+
+.blog h1.entry-title {
+	font-size: 1.4em !important;
+	text-align: center !important;
+}
+
+a.nlc-excerpt-more {
+	text-align: center;
+	margin-top: 2em;
+	padding: 1em;
+	background-color: #000;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif !important;
+	font-weight: normal !important;
+	letter-spacing: 1px !important;
+	text-transform: uppercase !important;
+}
+
+a.nlc-excerpt-more:hover {
+	background-color: #333;
+	-webkit-transition: all 0.5s; /* Safari 3.1 to 6.0 */
+	transition: all 0.5s;
+}
+
+/* Columns */
+
+.nlc-3col.col1,
+.nlc-3col.col2 {
+	width: 32%;
+	float: left;
+	margin-right: 2%;
+}
+
+.nlc-3col.col3 {
+	width: 32%;
+	float: right;
+}
+
+.nlc-2col.col1 {
+	width: 49%;
+	float: left;
+	margin-right: 2%;
+}
+
+.nlc-2col.col2 {
+	width: 49%;
+	float: right;
+}
+
+@media screen and (max-width: 768px) {
+
+	.nlc-3col.col1,
+	.nlc-3col.col2,
+	.nlc-3col.col3,
+	.nlc-2col.col1,
+	.nlc-2col.col2 {
+		width: 100%;
+		float: none;
+		margin-right: 0;
+		clear: both;
+	}
+
+}
+
+/* Blog */
+.single-post .hentry .entry-header h1 {
+	text-align: center;
+}
+
+.blog .posted-on {
+	display: none !important;
+}
+
+.nlc-meta {
+	margin-bottom: 0px !important;
+}
+
+.nlc-meta .cat-links {
+	font-size: 0.600em !important;
+}
+
+.nlc-meta .cat-links:before {
+	content: '';
+	width: 0px !important;
+	display: none !important;
+}
+
+.nlc-meta a {
+	border-bottom: none !important;
+	font-family: 'Montserrat', sans-serif !important;
+	font-weight: normal !important;
+	letter-spacing: 1px !important;
+	text-transform: uppercase !important;
+}
+
+.nlc-single-meta {
+	font-family: 'Montserrat', sans-serif !important;
+	font-weight: normal !important;
+	letter-spacing: 1px !important;
+	text-transform: uppercase !important;
+	background-color: #000;
+	padding: 1em !important;
+	color: #fff !important;
+}
+
+.nlc-single-meta a {
+	color: #fff !important;
+}
+
+.nlc-single-meta .posted-on,
+.nlc-single-meta .byline,
+.nlc-single-meta .cat-links,
+.nlc-single-meta .tags-links {
+	display: block !important;
+	margin-bottom: 0px !important;
+	font-size: 0.800em !important;
+}
+
+/* Misc */
+
+a:focus, .button:focus,
+.button.alt:focus,
+.button.added_to_cart:focus,
+.button.wc-forward:focus,
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus {
+    outline-color: transparent !important;
+}
+
+.home .entry-header {
+	display: none;
+}
+
+.home.blog .site-header,
+.home.page:not(.page-template-template-homepage) .site-header,
+.home.post-type-archive-product .site-header,
+.sd-header-inline .site-header {
+	margin-bottom: 0px !important;
+}
+
+/* Type - Style */
+.site-title,
+p.site-description,
+.page-title,
+.entry-title,
+.main-navigation,
+.widget-title,
+.widget_categories,
+.entry-footer,
+.secondary-navigation,
+.button,
+.main-navigation .menu-toggle,
+.site-info,
+h1, h2, h3,
+.entry-header {
+	font-family: 'Montserrat', sans-serif !important;
+	font-weight: normal !important;
+	letter-spacing: 1px !important;
+	text-transform: uppercase !important;
+}
+
+article p {
+	font-family: Georgia, serif;
+}
+
+/* Type - Size */
+
+.secondary-navigation,
+.site-info {
+	font-size: 0.600em;
+}
+
+.main-navigation,
+.button {
+	font-size: 0.800em;
+}
+
+.main-navigation a {
+	font-weight: normal !important;
+}
+
+p.header-text {
+    width: 100%;
+    margin: 0 auto 2em;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-style: italic !important;
+    font-weight: 400;
+    background: #000;
+    padding: 1em;
+	text-align:center;
+}
+
+/* Buttons */
+
+a.nlc-button {
+	margin: 10px 0px;
+	padding: 8px;
+	border: 3px solid #000;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+a.nlc-button:hover {
+	border: 3px solid #000;
+	background-color: #000;
+	color: #fff;
+	transition: 0.5s ease;
+}
+
+@media screen and (max-width: 768px) {
+
+	p.header-text {
+		font-size: 1.2rem;
+	}
+
+}
+
+/* Footer */
+
+footer .site-info {
+	text-align: center !important;
+}
+
+/* Tabs */
+
+.nlc-my-account-section {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.nlc-my-account-section form {
+	width: 60%;
+}
+
+.nlc-tabs-menu {
+	width: 20%;
+	float: left;
+	border-right: 3px solid #000;
+}
+
+.nlc-tabs-content {
+	width: 78%;
+	float: right;
+	-webkit-animation: scale 0.7s ease-in-out;
+    -moz-animation: scale 0.7s ease-in-out;
+    animation: scale 0.7s ease-in-out;
+}
+
+.nlc-tabs-menu ul.tabs {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	list-style-type: none;
+}
+
+.nlc-tabs-menu ul.tabs li a {
+	padding: 1em;
+	display: block;
+    color: #000;
+    cursor: pointer;
+    -webkit-transition: all 0.5s; /* Safari 3.1 to 6.0 */
+    transition: all 0.5s;
+    font-family: 'Montserrat';
+    font-size: 0.700em;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nlc-tabs-menu ul.tabs li.selected a,
+.nlc-tabs-menu ul.tabs li a:hover {
+	color: #fff;
+    background-color: #000;
+}
+
+.nlc-tabs-content p.myaccount_user {
+	color: #000;
+	font-family: 'Montserrat', sans-serif !important;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+
+	.nlc-tabs-menu {
+		width: 33%
+	}
+
+	.nlc-tabs-content {
+		width: 65%;
+	}
+
+	.nlc-tabs-menu ul.tabs li a {
+		font-size: 0.500em;
+		text-align: center;
+	}
+
+	.nlc-my-account-section form {
+		width: 100%;
+	}
+
+}
+
+/* WooCommerce */
+
+.woocommerce form h3,
+.woocommerce form label,
+.woocommerce fieldset legend {
+	font-family: 'Montserrat', sans-serif !important;
+	font-weight: normal !important;
+	letter-spacing: 1px !important;
+	text-transform: uppercase !important;
+}
+
+.woocommerce form label {
+	font-size: 0.600em;
+}
+
+/* Sensei */
+
+a.my-messages-link,
+#my-courses ul li,
+#my-courses.ui-tabs .ui-tabs-nav li a {
+	font-family: 'Montserrat', sans-serif !important;
+	font-weight: normal !important;
+	letter-spacing: 1px !important;
+	text-transform: uppercase !important;
+}
+
+#my-courses.ui-tabs ul.ui-tabs-nav {
+	margin: 0 !important;
+	padding: 0 !important;
+	border-bottom: 3px solid #000;
+}
+
+#my-courses.ui-tabs .ui-tabs-nav li {
+	margin: 0;
+}
+
+#my-courses.ui-tabs .ui-tabs-nav li a{
+	color: #000 !important;
+	padding: 1em !important;
+	border-radius: 0 !important;
+}
+
+#my-courses.ui-tabs {
+	width: 100%;
+	font-size: .9em;
+	letter-spacing: 1px !important;
+	text-align: center !important;
+}
+
+#my-courses.ui-tabs .ui-tabs-nav li.ui-state-active a,
+#my-courses.ui-tabs .ui-tabs-nav li a:hover {
+	background: #000 !important;
+	background-color: #000 !important;
+	color: #fff !important;
+	-webkit-transition: all 0.5s; /* Safari 3.1 to 6.0 */
+	transition: all 0.5s;
+}
+
+/* Sabai */
+
+.sabai-directory-search input,
+.sabai-search select,
+.sabai-search select option,
+.sabai-navigation,
+.sabai-directory-listings-list .sabai-entity,
+.sabai-directory-map-header,
+.sabai-directory-category,
+.sabai-directory-info,
+.sabai-nav-tabs,
+.sabai-entity-label-directory-claimed {
+	font-family: 'Montserrat', sans-serif !important;
+	font-weight: normal !important;
+	letter-spacing: 1px !important;
+	text-transform: uppercase !important;
+}
+
+.sabai-navigation a,
+.sabai-navigation-bottom,
+.sabai-entity-label-directory-claimed {
+	font-size: 0.600em;
+}
+.sabai-directory-category,
+.sabai-directory-location,
+.sabai-directory-contact,
+.sabai-directory-social,
+.sabai-nav-tabs  {
+	font-size: 0.800em;
+}
+
+.sabai-entity-label-directory-claimed {
+	background-color: #000 !important;
+}
+
+.sabai-btn-primary {
+    color: #fff !important;
+    background-color: #000 !important;
+    border-color: #000 !important;
+}
+
+.sabai-btn-primary:hover,
+.sabai-btn-primary:focus,
+.sabai-btn-primary:active,
+.sabai-btn-primary.sabai-active,
+.sabai-open>.sabai-dropdown-toggle.sabai-btn-primary {
+    background-color: #353535 !important;
+    border-color: #000 !important;
+}
+
+.sabai-btn-sm,
+.sabai-btn-group-sm>.sabai-btn {
+	border-radius: 0px;
+}
+
+.sabai-search {
+    padding: 8px 8px 0 8px;
+    border-radius: 0px;
+    background-color: #fff;
+    border: 1px solid #e7e7e7;
+    margin: 0 !important;
+}
+
+/* Ultimate Member */
+
+.um-account-name a,
+.um-account-main div.um-account-heading,
+.um-account-side li a span.um-account-title,
+.um-account-main label,
+.um-field-label label,
+.um-um_account_id.um input[type=submit].um-button,
+.select2-results .select2-result-label,
+.select2-container .select2-choice>.select2-chosen,
+.um-account-nav a,
+.um-profile-nav-item a,
+.um-name a,
+.um-item-link a,
+.um-item-meta {
+	font-family: 'Montserrat', sans-serif !important;
+	font-weight: normal !important;
+	letter-spacing: 1px !important;
+	text-transform: uppercase !important;
+	color: #000 !important;
+}
+
+.um-um_account_id.um .um-form input[type=text],
+.um-um_account_id.um .um-form input[type=password],
+.um-um_account_id.um .um-form textarea {
+	font-family: 'Montserrat', sans-serif !important;
+	font-weight: normal !important;
+	letter-spacing: 1px !important;
+	color: #000 !important;
+}
+
+.um-account-side li a span.um-account-title,
+.um-account-main label,
+.um-field-label label {
+	font-size: 0.600em !important;
+}
+
+.um-profile-nav-item a {
+	font-size: 0.800em !important;
+}
+
+.um-account-side li {
+    margin-bottom: 0px !important;
+    background: #fff !important;
+}
+
+.um-account-side li a:hover,
+.um-account-side li a.current,
+.um-account-side li a.current:hover,
+.um-profile-nav-item.active a,
+.um-profile-nav-item.active a:hover,
+.um-profile-nav-item a:hover {
+	background: #000 !important;
+	background-color: #000 !important;
+	color: #fff !important;
+	-webkit-transition: all 0.5s; /* Safari 3.1 to 6.0 */
+	transition: all 0.5s;
+}
+
+.um-account-side li a,
+.um-account-side li a .um-account-icontip,
+.um-account-side li a .um-account-icon,
+.um-account-side li a .um-account-title,
+.um-account-side li a .um-account-arrow
+.um-profile-nav-item a {
+	color: #000 !important;
+}
+
+.um-account-side li a.current .um-account-icontip,
+.um-account-side li a.current .um-account-icon,
+.um-account-side li a.current .um-account-title,
+.um-account-side li a.current .um-account-arrow,
+.um-account-side li a:hover .um-account-icontip,
+.um-account-side li a:hover .um-account-icon,
+.um-account-side li a:hover .um-account-title,
+.um-account-side li a:hover .um-account-arrow {
+	color: #fff !important;
+}
+
+.um-um_account_id.um input[type=submit].um-button {
+	background: #000 !important;
+	background-color: #000 !important;
+	border-radius: 0px !important;
+	color: #fff !important;
+}
+.um-um_account_id.um input[type=submit].um-button:hover {
+	background: #353535 !important;
+	background-color: #353535 !important;
+	-webkit-transition: all 0.5s; /* Safari 3.1 to 6.0 */
+	transition: all 0.5s;
+}
+
+.um-header {
+	border-bottom: 0px !important;
+}
+
+.um-profile-nav {
+	padding: 0px !important;
+	background: none !important;
+	border-bottom: 3px solid #000;
+}
+
+.um-profile-nav-item a {
+	margin-left: 0px !important;
+	border-radius: 0px !important;
+}
+
+.um-item-meta span {
+    font-size: 0.600em !important;
+    font-style: none !important;
+}
+.um-account-main .woocommerce_account_subscriptions h2,
+.um-account-main .wc-address-page h2 {
+	display: none;
+}

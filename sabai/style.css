@@ -1,0 +1,15 @@
+/* Type - Style */
+
+.sabai-directory-search
+.sabai-navigation a {
+	font-family: 'Montserrat', sans-serif !important;
+	font-weight: normal !important;
+	letter-spacing: 1px !important;
+	text-transform: uppercase !important;
+}
+
+/* Type - Size */
+
+.sabai-navigation {
+	font-size: 0.600em;
+}
